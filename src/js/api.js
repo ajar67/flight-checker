@@ -10,6 +10,7 @@ export async function fetchLocation() {
       code: data.iso2,
       flag: data.emoji,
     };
+    console.log(location);
     return location;
   } catch (err) {
     console.log(err);
@@ -25,6 +26,7 @@ export async function fetchCountries() {
       continent: item.region,
       code: item.cca2,
     }));
+    console.log(countries);
     return countries;
   } catch (err) {
     console.error("Error fetching countries: ", err);
@@ -38,6 +40,7 @@ export async function fetchAirports(country) {
     );
     let data = await response.json();
     const airports = data.response.filter((airport) => airport.iata_code);
+    console.log(airports);
     return airports;
   } catch (err) {
     console.error("Error fetching airports: ", err);
@@ -51,6 +54,7 @@ export async function fetchFlights(airport) {
     );
     let data = await response.json();
     const flights = data.response;
+    console.log(flights);
     return flights;
   } catch (err) {
     console.error("Error fetching flights: ", err);
