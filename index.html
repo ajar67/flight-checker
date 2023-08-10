@@ -24,45 +24,24 @@
 
 
     <div class="arrival__container">
-      <p>Arrivals</p>
-      <div class="arrival__display">
-        <p>Ident</p>
-        <p>Type</p>
-        <p>From</p>
-        <p>Arrival Time</p>
-        <p>Departure Time</p>
-      </div>
       <template class="template">
-        <div class="arrival__tabs">
+        <p class="template__title"></p> // this is where the Arrivals title will be
+      <div class="arrival__display"> // this div takes care of the of the "Ident, From, Departure Time, Arrival Time"
+        <p class="template__markers"></p> 
+        <p class="template__markers"></p>
+        <p class="template__markers"></p>
+        <p class="template__markers"></p>
+        <p class="template__markers"></p>
+      </div>
+        <ul class="arrival__tabs"> // this is the information of the flights... where the flights will render... i will use flexbox and style them correctly and then we can use this to list all the flights
           <div class="arrival__ident_value"></div>
           <div class="arrival__type_value"></div>
           <div class="arrival__from_value"></div>
           <div class="arrival__atime_value"></div>
           <div class="arrival__dtime_value"></div>
-        </div>
+        </ul>
       </template>
     </div>
-
-    <div class="departure__container">
-      <p>Departures</p>
-      <div class="departure__display">
-        <p>Ident</p>
-        <p>Type</p>
-        <p>From</p>
-        <p>Arrival Time</p>
-        <p>Departure Time</p>
-      </div>
-      <template class="template__two">
-        <div class="departure__tabs">
-          <div class="departure__ident_value"></div>
-          <div class="departure__type_value"></div>
-          <div class="departure__from_value"></div>
-          <div class="departure__atime_value"></div>
-          <div class="departure__dtime_value"></div>
-        </div>
-      </template>
-    </div>
-
 
 
     <script type="module" src="./src/index.js"></script>
