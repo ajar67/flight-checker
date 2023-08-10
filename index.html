@@ -26,20 +26,22 @@
     <div class="arrival__container">
       <template class="template">
         <p class="template__title"></p> // this is where the Arrivals title will be
-      <div class="arrival__display"> // this div takes care of the of the "Ident, From, Departure Time, Arrival Time"
-        <p class="template__markers"></p> 
+      <div class="template__display"> // this div takes care of the of the "Ident, From, Departure Time, Arrival Time"
+        <p class="template__markers"></p>//i might put a dic here but i will do that later when styling to see whats best 
         <p class="template__markers"></p>
         <p class="template__markers"></p>
         <p class="template__markers"></p>
         <p class="template__markers"></p>
       </div>
-        <ul class="arrival__tabs"> // this is the information of the flights... where the flights will render... i will use flexbox and style them correctly and then we can use this to list all the flights
-          <div class="arrival__ident_value"></div>
-          <div class="arrival__type_value"></div>
-          <div class="arrival__from_value"></div>
-          <div class="arrival__atime_value"></div>
-          <div class="arrival__dtime_value"></div>
+      <template class="template__inner">
+        <ul class="template__inner_tabs"> // this is the information of the flights... where the flights will render... i will use flexbox and style them correctly and then we can use this to list all the flights
+          <div class="template__ident_value"></div>
+          <div class="template__type_value"></div>
+          <div class="template__from_value"></div>
+          <div class="template__atime_value"></div>
+          <div class="template__dtime_value"></div>
         </ul>
+      </template>
       </template>
     </div>
 
