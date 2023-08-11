@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #efeded;
+  width: 100%;
+}
+
+.nav__span {
+  display: inline-flex;
+}
+
+.navbar__logo {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  align-self: center;
+}
+
+.navbar__name {
+  color: #000;
+  padding-left: 10px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 25px;
+  font-style: none;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.navbar__clear {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.navbar__clear:hover {
+  transform: scale(1.1);
+}
