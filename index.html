@@ -7,44 +7,151 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div
-      id="app"
-      class="flex h-screen flex-col items-center justify-between text-center"
-    >
+    <div id="app">
       <div id="navbar" class="navbar bg-base-300">
         <p>Navbar</p>
       </div>
-      <div id="content" class="w-full bg-base-200 px-8">
-        <p>Content</p>
-      </div>
+
+      <section class="content" style="margin: 100px; display: block">
+        <div
+          class="content__header"
+          style="display: flex; justify-content: center; margin-bottom: 20px"
+        >
+          <input
+            type="text"
+            class="content__input"
+            id="country"
+            name="country"
+            placeholder="Country"
+            required
+            style="
+              border: 2px solid #ccc;
+              border-radius: 2px;
+              width: 300px;
+              height: 40px;
+              padding-left: 10px;
+            "
+          />
+          <input
+            type="text"
+            class="content__input"
+            id="airport"
+            name="airport"
+            placeholder="Airport"
+            required
+            style="
+              border: 2px solid #ccc;
+              border-radius: 2px;
+              width: 300px;
+              height: 40px;
+              padding-left: 10px;
+            "
+          />
+          <button
+            class="content__button"
+            style="background-color: #ccc; border-radius: 2px; width: 200px"
+            onmouseover="this.style.backgroundColor = '#999';"
+            onmouseout="this.style.backgroundColor = '#ccc';"
+          >
+            See Flights
+          </button>
+          <button
+            class="content__reset"
+            style="
+              margin-left: 15px;
+              background-color: rgba(255, 0, 0, 1);
+              border-radius: 2px;
+              width: 100px;
+            "
+            onmouseover="this.style.backgroundColor = 'rgba(155, 0, 0, 1)';"
+            onmouseout="this.style.backgroundColor = 'rgba(255, 0, 0, 1)';"
+          >
+            Clear
+          </button>
+        </div>
+        <div
+          class="content__titles"
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+          "
+        >
+          <div class="content__departures" style="">
+            <p
+              class="content__title"
+              style="display: flex; justify-content: center"
+            >
+              Departures
+            </p>
+            <div
+              class="content__bar"
+              style="
+                display: flex;
+                flex-direction: row;
+                border-radius: 2px;
+                border: 2px solid #ccc;
+                gap: 50px;
+                padding-left: 50px;
+                padding-right: 50px;
+              "
+            >
+              <p class="content__bar_title">Time</p>
+              <p class="content__bar_title">Airline</p>
+              <p class="content__bar_title">Flight</p>
+              <p class="content__bar_title">Origin</p>
+              <p class="content__bar_title">Status</p>
+            </div>
+          </div>
+          <div class="content__arrivals">
+            <p
+              class="content__title"
+              style="display: flex; justify-content: center"
+            >
+              Arrivals
+            </p>
+            <div
+              class="content__bar"
+              style="
+                display: flex;
+                flex-direction: row;
+                border-radius: 2px;
+                border: 2px solid #ccc;
+                gap: 50px;
+                padding-left: 50px;
+                padding-right: 50px;
+              "
+            >
+              <p class="content__bar_title">Time</p>
+              <p class="content__bar_title">Airline</p>
+              <p class="content__bar_title">Flight</p>
+              <p class="content__bar_title">Origin</p>
+              <p class="content__bar_title">Status</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <ul>
+          This is where the flights will generate
+        </ul>
+      </section>
+
       <div id="footer" class="footer footer-center bg-base-300 p-4">
         <p>Footer</p>
       </div>
     </div>
 
-
-    <div class="table__container">
-      <template class="template">
-        <p class="template__title"></p> // this is where the Arrivals title will be
-      <div class="template__display"> // this div takes care of the of the "Ident, From, Departure Time, Arrival Time"
-        <p class="template__markers"></p>//i might put a dic here but i will do that later when styling to see whats best 
-        <p class="template__markers"></p>
-        <p class="template__markers"></p>
-        <p class="template__markers"></p>
-        <p class="template__markers"></p>
-      </div>
-      <template class="template__inner">
-        <ul class="template__inner_tabs"> // this is the information of the flights... where the flights will render... i will use flexbox and style them correctly and then we can use this to list all the flights
-          <div class="template__ident_value"></div>
-          <div class="template__type_value"></div>
-          <div class="template__from_value"></div>
-          <div class="template__atime_value"></div>
-          <div class="template__dtime_value"></div>
-        </ul>
-      </template>
-      </template>
-    </div>
-
+    <template class="template">
+      <li class="template__inner_tabs">
+        <div class="template__ident_value"></div>
+        <div class="template__type_value"></div>
+        <div class="template__from_value"></div>
+        <div class="template__atime_value"></div>
+        <div class="template__dtime_value"></div>
+      </li>
+    </template>
 
     <script type="module" src="./src/index.js"></script>
   </body>
