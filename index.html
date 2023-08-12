@@ -2,24 +2,107 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Flight Checker</title>
   </head>
   <body>
-    <div
-      id="app"
-      class="flex h-screen flex-col items-center justify-between text-center"
-    >
-      <div id="navbar" class="navbar bg-base-300">
-        <p>Navbar</p>
-      </div>
-      <div id="content" class="w-full bg-base-200 px-8">
-        <p>Content</p>
-      </div>
-      <div id="footer" class="footer footer-center bg-base-300 p-4">
-        <p>Footer</p>
-      </div>
+    <div id="app" class="">
+      <header id="navbar" class="">
+        <div class="">
+          <img id="navbar-logo" class="" />
+          <a href="/" class="">
+            <p class="">Flight Checker</p>
+          </a>
+        </div>
+      </header>
+
+      <main id="content" class="">
+        <div id="hero" class="">
+          <div>
+            <h1 class="">
+              Check Flight Status
+              <span class="">From Home!</span>
+            </h1>
+            <p class="">
+              Instantly access real-time flight updates for global airports.
+              Whether you're planning a trip, picking up a loved one, or just
+              staying informed, get accurate, up-to-the-minute details all from
+              the comfort of your home.
+            </p>
+          </div>
+          <div class="">
+            <img id="hero-img" class="" />
+          </div>
+        </div>
+        <div class="">
+          <form id="form" class="">
+            <input
+              id="input-country"
+              type="text"
+              name="country"
+              placeholder="Country"
+              autocomplete="off"
+              required
+              class=""
+            />
+            <input
+              id="input-airport"
+              type="text"
+              name="airport"
+              placeholder="Airport"
+              autocomplete="off"
+              required
+              class=""
+            />
+            <button class="">See flights</button>
+          </form>
+          <div class="">
+            <button id="clear-button" class="">Clear</button>
+          </div>
+        </div>
+        <div class="">
+          <p id="invalid-data" class=""></p>
+        </div>
+        <div class="">
+          <div id="dep-container"></div>
+          <div id="arr-container"></div>
+        </div>
+      </main>
+
+      <footer id="footer" class="">
+        <div class="">
+          <p>Copyright © 2023 - Flight Checker</p>
+        </div>
+        <div class="">
+          <a
+            href="https://github.com/ajar67/flight-checker"
+            target="_blank"
+            class="text-base-content"
+            >GitHub Repository</a
+          >
+        </div>
+      </footer>
+      <template id="flights-table">
+        <div class="">
+          <div class="">
+            <p id="table-title" class=""></p>
+          </div>
+          <table class="">
+            <thead>
+              <tr>
+                <th>TIME</th>
+                <th>AIRLINE</th>
+                <th>FLIGHT</th>
+                <th>ORIGIN</th>
+                <th>DESTIN</th>
+                <th>STATUS</th>
+              </tr>
+            </thead>
+            <tbody id="table-content"></tbody>
+          </table>
+        </div>
+      </template>
     </div>
     <script type="module" src="./src/index.js"></script>
   </body>
