@@ -81,7 +81,13 @@
           <div class="content__departures" style="">
             <p
               class="content__title"
-              style="display: flex; justify-content: center"
+              style="
+                display: flex;
+                justify-content: center;
+                border: 2px solid #ccc;
+                color: black;
+                background-color: #ccc;
+              "
             >
               Departures
             </p>
@@ -107,7 +113,13 @@
           <div class="content__arrivals">
             <p
               class="content__title"
-              style="display: flex; justify-content: center"
+              style="
+                display: flex;
+                justify-content: center;
+                border: 2px solid #ccc;
+                color: black;
+                background-color: #ccc;
+              "
             >
               Arrivals
             </p>
@@ -132,8 +144,8 @@
           </div>
         </div>
       </section>
-      <section>
-        <ul>
+      <section class="flight">
+        <ul class="flight__list">
           This is where the flights will generate
         </ul>
       </section>
@@ -143,13 +155,13 @@
       </div>
     </div>
 
-    <template class="template">
-      <li class="template__inner_tabs">
-        <div class="template__ident_value"></div>
-        <div class="template__type_value"></div>
-        <div class="template__from_value"></div>
-        <div class="template__atime_value"></div>
-        <div class="template__dtime_value"></div>
+    <template class="template" id="flights-table">
+      <li class="template__list">
+        <div class="template__time"></div>
+        <div class="template__airplane"></div>
+        <div class="template__flight"></div>
+        <div class="template__origin"></div>
+        <div class="template__status"></div>
       </li>
     </template>
 
