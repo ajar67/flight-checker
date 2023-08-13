@@ -26,19 +26,3 @@
   font-weight: 900;
   line-height: normal;
 }
-
-.navbar__clear {
-  background-color: transparent;
-  color: #000;
-  border: 1px solid #000;
-  border-radius: 10px;
-  padding: 10px 15px 10px 15px;
-  font-family: "DM Sans", sans-serif;
-  font-size: 20px;
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-.navbar__clear:hover {
-  transform: scale(1.1);
-}
