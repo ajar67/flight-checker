@@ -17,57 +17,70 @@
           class="content__header"
           style="display: flex; justify-content: center; margin-bottom: 20px"
         >
-          <input
-            type="text"
-            class="content__input"
-            id="country"
-            name="country"
-            placeholder="Country"
-            required
-            style="
-              border: 2px solid #ccc;
-              border-radius: 2px;
-              width: 300px;
-              height: 40px;
-              padding-left: 10px;
-            "
-          />
-          <input
-            type="text"
-            class="content__input"
-            id="airport"
-            name="airport"
-            placeholder="Airport"
-            required
-            style="
-              border: 2px solid #ccc;
-              border-radius: 2px;
-              width: 300px;
-              height: 40px;
-              padding-left: 10px;
-            "
-          />
-          <button
-            class="content__button"
-            style="background-color: #ccc; border-radius: 2px; width: 200px"
-            onmouseover="this.style.backgroundColor = '#999';"
-            onmouseout="this.style.backgroundColor = '#ccc';"
+          <form
+            id="form"
+            class="content__form"
+            style="display: flex; flex-direction: row"
           >
-            See Flights
-          </button>
-          <button
-            class="content__reset"
-            style="
-              margin-left: 15px;
-              background-color: rgba(255, 0, 0, 1);
-              border-radius: 2px;
-              width: 100px;
-            "
-            onmouseover="this.style.backgroundColor = 'rgba(155, 0, 0, 1)';"
-            onmouseout="this.style.backgroundColor = 'rgba(255, 0, 0, 1)';"
-          >
-            Clear
-          </button>
+            <input
+              type="text"
+              class="content__input"
+              id="country"
+              name="country"
+              placeholder="Country"
+              required
+              style="
+                border: 2px solid #ccc;
+                border-radius: 2px;
+                width: 300px;
+                height: 40px;
+                padding-left: 10px;
+              "
+            />
+            <input
+              type="text"
+              class="content__input"
+              id="airport"
+              name="airport"
+              placeholder="Airport"
+              required
+              style="
+                border: 2px solid #ccc;
+                border-radius: 2px;
+                width: 300px;
+                height: 40px;
+                padding-left: 10px;
+              "
+            />
+            <button
+              type="submit"
+              class="content__button"
+              style="
+                background-color: #ccc;
+                border-radius: 2px;
+                width: 200px;
+                height: 40px;
+              "
+              onmouseover="this.style.backgroundColor = '#999';"
+              onmouseout="this.style.backgroundColor = '#ccc';"
+            >
+              See Flights
+            </button>
+            <button
+              class="content__reset"
+              style="
+                margin-left: 15px;
+                background-color: rgba(255, 0, 0, 1);
+                border-radius: 2px;
+                width: 100px;
+                height: 40px;
+              "
+              onmouseover="this.style.backgroundColor = 'rgba(155, 0, 0, 1)';"
+              onmouseout="this.style.backgroundColor = 'rgba(255, 0, 0, 1)';"
+            >
+              Clear
+            </button>
+          </form>
         </div>
         <div
           class="content__titles"
@@ -78,7 +91,7 @@
             gap: 50px;
           "
         >
-          <div class="content__departures" style="">
+          <div class="content__departures" style="display: flex; flex-direction: column;">
             <p
               class="content__title"
               style="
